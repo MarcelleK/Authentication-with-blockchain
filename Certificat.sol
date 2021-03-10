@@ -10,7 +10,7 @@ contract CertificateRegistry {
     address [] public registeredCertificates;
     event CertificateCreated(address certificateAddress);
 
-    function createMarriage(string memory _nom, string memory _prenom, string memory _date_de_naissance, string memory _diplome, uint _annee_obtention) public {
+    function createCertificate(string memory _nom, string memory _prenom, string memory _date_de_naissance, string memory _diplome, uint _annee_obtention) public {
         address newCertificate = address(new Certificate(msg.sender, _nom, _prenom, _date_de_naissance, _diplome, _annee_obtention));
         emit CertificateCreated(newCertificate);
         registeredCertificates.push(newCertificate);

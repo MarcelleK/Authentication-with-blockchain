@@ -1,0 +1,338 @@
+<!DOCTYPE html><html lang="fr">
+  <head>
+
+<meta charset="utf-8" />
+<title>Accueil - certification.gouv.fr</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+
+  </head>
+
+  <body class="home theme-default">
+
+    <section class="header">
+    <div class="container">
+
+        <nav class="navbar navbar-default navbar-static-top" >
+
+            <header class="navbar-header">
+                              <img src="logo.png" height="60" class="logo" style="float:left; ">
+                <a class="navbar-text" href="/fr/">certification.gouv.fr</a>
+                <p class="navbar-text pull-right">Plateforme ouverte de certification de diplômes</p>
+            </header>
+        </nav>
+    </div>
+</section>
+
+<section class="topmenu collapse navbar-collapse">
+    <div class="container">
+        <nav class="navbar navbar-default navbar-static-top">
+            <ul class="nav navbar-nav links">
+
+                <li >
+                    <a href="/fr/datasets/">Données</a>
+
+                </li>
+
+                <li >
+                    <a href="/fr/reuses/">Réutilisations</a>
+
+                </li>
+
+                <li >
+                    <a href="/fr/organizations/">Organisations</a>
+
+                </li>
+
+                <li >
+                    <a href="/fr/dashboard/">Tableau de bord</a>
+
+                </li>
+
+
+                                <li >
+                                    <a href="/fr/dashboard/">Documentation</a>
+
+                                </li>
+
+                <li >
+                    <a href="/fr/posts/">Actualités</a>
+
+                </li>
+
+            </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="dropdown language">
+                    <button class="btn btn-link dropdown-toggle" data-toggle="dropdown">
+                        <img src="https://static.data.gouv.fr/_themes/gouvfr/img/flags/fr.png?_=2.5.1"
+                            alt="Current locale flag"
+                            width="16" height="16" />
+                    </button>
+                    <ul class="dropdown-menu">
+
+                        <li>
+                            <a >
+                                <img src="en.png"
+                                    alt="English flag"
+                                    width="16" height="16" />
+                                English
+                            </a>
+                        </li>
+
+                        <li>
+                            <a >
+                                <img src="fr.png"
+                                    alt="Français flag"
+                                    width="16" height="16" />
+                                Français
+                            </a>
+                        </li>
+
+                        <li>
+                            <a >
+                                <img src="es.png"
+                                    alt="Español flag"
+                                    width="16" height="16" />
+                                Español
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+
+
+                <li>
+                    <a title="Connexion / Inscription"
+                        href="/fr/login?next=https%3A%2F%2Fwww.data.gouv.fr%2Ffr%2F">
+                        Connexion / Inscription
+                    </a>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+</section>
+
+
+
+
+<nav class="navbar navbar-static-top navbar-subnav subnav-large">
+    <div class="cover-default"></div>
+    <div class="container">
+
+        <div class="side-bgs">
+            <div class="bg"></div>
+            <div class="bg collapse sidebg-collapse"></div>
+        </div>
+
+        <div class="search_sidebar col-sm-5 col-md-4 col-xs-12" role="search">
+
+            <nav class="sidebar panel">
+                <site-search v-ref:search action="/fr/search/" placeholder="Recherche"
+
+    size="lg"
+    >
+    <form class="site-search" action="/fr/search/">
+        <div class="input-group input-group-lg">
+            <div class="input-group-btn">
+                <button class="btn" type="submit"><i class="fa"></i></button>
+            </div>
+            <label for="search" class="hidden">Recherche</label>
+            <input id="search" name="q" type="search" class="form-control" placeholder="Recherche" />
+        </div>
+    </form>
+</site-search>
+            </nav>
+
+            <nav class="sidebar panel collapse subnav-collapse">
+                <!-- Groups -->
+                <div class="list-group">
+
+                    <a class="list-group-item">
+                        Universités
+                    </a>
+
+                    <a class="list-group-item">
+                        Écoles d'ingénieur
+                    </a>
+
+                    <a class="list-group-item">
+                        Formations en entreprises
+                    </a>
+
+                    <a class="list-group-item" >
+                        Formations en ligne
+                    </a>
+
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="call-to-action col-sm-7 col-md-8 col-lg-7 col-xs-12">
+            <h2>Certifiez, consultez et réutilisez vos diplômes</h2>
+            <div class="collapse subnav-collapse">
+
+                <button class="btn btn-primary btn-big btn-transparent btn-left"
+                        title="Contribuez !"
+                        @click="$refs.publishActionModal.show"
+                        data-track-content data-content-name="CTA" data-content-piece="home/contribute">
+                    <span class="fa">+</span>
+                    Contribuez !
+                </button>
+
+            </div>
+        </div>
+
+    </div>
+  </nav>
+
+
+<section class="default">
+    <div class="container">
+
+
+        <div class="row first-row">
+
+            <div class="col-xs-12">
+                <div class="row">
+                    <ul class="card-list card-list--columned">
+                        <li class="col-sm-4 col-xs-12">
+                            <a class="card-link" href="/fr/pages/donnees-coronavirus">
+                            <div class="inventory-card green">
+                                <h4 class="inventory-text">Consultation<span class="inventory-title">Voir un diplôme</span></h4>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="col-sm-4 col-xs-12">
+                            <a class="card-link" href="/fr/pages/donnees-des-elections">
+                            <div class="inventory-card blue">
+                                <h4 class="inventory-text">Certification<span class="inventory-title">Authentifier un diplôme</span></h4>
+                            </div>
+                            </a>
+                        </li>
+                        <li class="col-sm-4 col-xs-12">
+                            <a class="card-link" href="/fr/pages/donnees-comptes-publics">
+                            <div class="inventory-card violet">
+                                <h4 class="inventory-text">Partenariat<span class="inventory-title">Collaborer au projet</span></h4>
+                            </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <section class="footer">
+        <div class="container">
+            <footer class="row">
+
+                <section class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+                    <h5>PRATIQUE</h5>
+                    <ul>
+
+                        <li>
+                            <a >Documentation</a>
+
+                        </li>
+
+                        <li>
+                            <a >Données de référence</a>
+
+                        </li>
+
+                        <li>
+                            <a>Licences</a>
+
+                        </li>
+
+                        <li>
+                            <a>API</a>
+
+                        </li>
+
+                        <li>
+                            <a>Conditions générales d&#39;utilisation</a>
+
+                        </li>
+
+                        <li>
+                            <a>Politique de confidentialité</a>
+
+                        </li>
+
+                        <li>
+                            <a>Catalogue des données</a>
+
+                        </li>
+
+                    </ul>
+                </section>
+                <section class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+                    <h5>Thématiques</h5>
+                    <ul>
+
+                        <li>
+                            <a >
+                            Universités
+                            </a>
+                        </li>
+
+                        <li>
+                            <a >
+                            Ecoles d'ingénieur
+                            </a>
+                        </li>
+
+                        <li>
+                            <a >
+                            Formations en entreprise
+                            </a>
+                        </li>
+
+                        <li>
+                            <a>
+                            Formations en ligne
+                            </a>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="col-xs-6 col-sm-3 col-md-2 col-lg-2">
+                    <h5>Partenaires</h5>
+                    <ul>
+
+                        <li><a >partenaire.fr</a></li>
+
+                        <li><a >partenaire.fr</a></li>
+
+                        <li><a >partenaire.fr</a></li>
+
+                        <li><a >partenaire.fr</a></li>
+
+                        <li><a>partenaire.fr</a></li>
+
+                        <li><a >partenaire.fr</a></li>
+
+                        <li><a >partenaire.fr</a></li>
+
+                    </ul>
+                </section>
+                <p class="bottom-right"><a href="#">Haut de page</a></p>
+
+            </footer>
+        </div>
+    </section>
+
+
+  </body>
+</html>
